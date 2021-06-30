@@ -43,7 +43,7 @@ class _MyApp extends State<MyApp> {
         return HomePage();  // <----เรียกใช้ ไฟล์ HomePage
         break;
       case 1: 
-        return Promooo();//NewContactPage(head: 'XD',title:'XDDD');//TestPage();//
+        return Promooo();//NewContactPage(head: 'XD',title:'XDDD');//
         break;
       case 2:
       return NotificationPage();//NewInfoPageBuyer();
