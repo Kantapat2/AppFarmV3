@@ -59,7 +59,7 @@ class _CollapsableAppbarDemoState extends State<CollapsableAppbarDemo> {
                   transitionDuration: Duration(seconds: 0),
                 ),
               );
-              return;
+              return _calculation;
             },
             child: FutureBuilder<String>(
                 future: _calculation,
