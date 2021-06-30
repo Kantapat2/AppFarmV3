@@ -31,7 +31,7 @@ class _BodyCart extends State<BodyCart> {
                   child:Row(
                     children: [
                       Spacer(),
-                      SvgPicture.asset("assets/icons/Trash.svg"),                
+                      SvgPicture.asset("icons/Trash.svg"),                
                     ],
                   )
                 ),

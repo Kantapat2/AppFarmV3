@@ -1,3 +1,4 @@
+import 'package:SumApp_1/screen/Cart/Cart.dart';
 import 'package:SumApp_1/screen/Info/components/Gps.dart';
 import 'package:flutter/material.dart';
 /*
@@ -16,7 +17,6 @@ import 'package:SumApp_1/screen/Contract/New_contact_page.dart';
 import 'package:SumApp_1/screen/Info/NewBuyer_info_page.dart';
 
 class TestPage extends StatefulWidget {
-
   TestPage();
 
   @override
@@ -25,8 +25,7 @@ class TestPage extends StatefulWidget {
   }
 }
 
-List<dynamic> standartDataAsk(
-    {List<IconData> icon, List<String> ask}) {
+List<dynamic> standartDataAsk({List<IconData> icon, List<String> ask}) {
   var sdArray = [];
 
   var dArray1 = [];
@@ -66,7 +65,6 @@ List<dynamic> standartDataAsk(
 class _TestPage extends State<TestPage> {
   //List<dynamic> metricDataContact = standartDataContact();
 
-  
   // Map<String, dynamic> mydata;
 
   // @override
@@ -117,29 +115,24 @@ class _TestPage extends State<TestPage> {
         bottomNavigationBar: null,
       ),
     );
-    
   }
 
-  Widget myContent()
-  {
-return Container(
+  Widget myContent() {
+    return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage("images/tempbg.jpg"),
           fit: BoxFit.cover,
         ),
       ),
-      child: 
-      
-      
-      Center(
+      child: Center(
         child: Container(
           height: MediaQuery.of(context).size.height * 0.7,
-          width: MediaQuery.of(context).size.width*0.8,
+          width: MediaQuery.of(context).size.width * 0.8,
           color: Colors.cyan.withOpacity(0.3),
           margin: EdgeInsets.symmetric(vertical: 50.0),
           child: SingleChildScrollView(
-                      child: Column(
+            child: Column(
               children: [
                 //mycard(),mycard(),mycard(),mycard(),mycard(),mycard(),mycard(),mycard(),mycard(),mycard(),
                 RaisedButton(
@@ -148,8 +141,7 @@ return Container(
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => NewInfoPageSeller()
-                      ),
+                          builder: (context) => NewInfoPageSeller()),
                     );
                     print('tab Me');
                   },
@@ -161,8 +153,9 @@ return Container(
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => NewInfoPageBuyer('Error_Here') // <-----------Error Here
-                      ),
+                          builder: (context) => NewInfoPageBuyer(
+                              'Error_Here') // <-----------Error Here
+                          ),
                     );
                     print('tab Me');
                   },
@@ -174,15 +167,13 @@ return Container(
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => NewContactPage(
-                           'ErrorHere', // <---------------------------------------ErrorHere
-                          //true,
-                        // title: 'XD1',
-                        //mypicpath: 'https://i1.wp.com/googleanalyticsthailand.com/wp-content/uploads/2020/05/Line-my-shop.png?resize=768%2C377&ssl=1',
-                        myBgcolor: Colors.yellow.shade100,
-                        
-                        )
-                      ),
+                          builder: (context) => NewContactPage(
+                                'ErrorHere', // <---------------------------------------ErrorHere
+                                //true,
+                                // title: 'XD1',
+                                //mypicpath: 'https://i1.wp.com/googleanalyticsthailand.com/wp-content/uploads/2020/05/Line-my-shop.png?resize=768%2C377&ssl=1',
+                                myBgcolor: Colors.yellow.shade100,
+                              )),
                     );
                     print('tab Me');
                   },
@@ -209,7 +200,7 @@ return Container(
                           //     Icons.email,
                           //     Icons.contacts
                           //   ],
-                          //   ask: ['โทร', 'มือถือ', 'E-mail', 'Line'], 
+                          //   ask: ['โทร', 'มือถือ', 'E-mail', 'Line'],
                           // ),
                           // listData: ['1','2','3','4'],
                         ),
@@ -219,21 +210,19 @@ return Container(
                   },
                   child: Text('Press me for ContactPage_Custom'),
                 ),
-                 RaisedButton(
+                RaisedButton(
                   onPressed: () {
                     // <-----------  ใช้สำหรับ ทดสอบ
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => NewContactPage(
-                           'ErrorHere', // <---------------------------------------ErrorHere
-                          //true,
-                        // title: 'XD15',
-                        //mypicpath: 'https://i1.wp.com/googleanalyticsthailand.com/wp-content/uploads/2020/05/Line-my-shop.png?resize=768%2C377&ssl=1',
-                        myBgcolor: Colors.yellow.shade100,
-                        
-                        )
-                      ),
+                          builder: (context) => NewContactPage(
+                                'ErrorHere', // <---------------------------------------ErrorHere
+                                //true,
+                                // title: 'XD15',
+                                //mypicpath: 'https://i1.wp.com/googleanalyticsthailand.com/wp-content/uploads/2020/05/Line-my-shop.png?resize=768%2C377&ssl=1',
+                                myBgcolor: Colors.yellow.shade100,
+                              )),
                     );
                     print('tab Me');
                   },
@@ -257,26 +246,31 @@ return Container(
                 //   },
                 //   child: Text('Check Data'),
                 // ),
-                
-                
+
                 RaisedButton(
                   onPressed: () {
                     // <-----------  ใช้สำหรับ ทดสอบ
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) => Map()
-                      ),
+                      MaterialPageRoute(builder: (context) => Map()),
                     );
                     print('tab Me');
                   },
                   child: Text('Press me for Map'),
                 ),
 
-
-
-
-
+                RaisedButton(
+                  onPressed: () {
+                    // <-----------  ใช้สำหรับ ทดสอบ
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => CartPage()),
+                    );
+                    print('tab Me');
+                  },
+                  child: Text('Press me for CartPage'),
+                ),
+                
 
               ],
             ),
@@ -284,12 +278,6 @@ return Container(
         ),
       ),
     );
-
-
-
-
-
-
   }
 
   Widget mycard() {
