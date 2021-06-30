@@ -17,7 +17,7 @@ class BodyProfile extends StatelessWidget {
             icon: "icons/Camera_Icon.svg",
             press: () => {},
           ),
-         /* ProfileMenu(
+          /*ProfileMenu(
             text: "Notifications",
             icon: "icons/Bell.svg",
             press: () {},
@@ -27,7 +27,7 @@ class BodyProfile extends StatelessWidget {
             icon: "icons/Settings.svg",
             press: () {},
           ),
-         /* ProfileMenu(
+          ProfileMenu(
             text: "Help Center",
             icon: "icons/Question mark.svg",
             press: () {},
@@ -36,7 +36,7 @@ class BodyProfile extends StatelessWidget {
             text: "Log Out",
             icon: "icons/Log out.svg",
             press: () {},
-          ),*/
+          ),
         ],
       ),
     );
