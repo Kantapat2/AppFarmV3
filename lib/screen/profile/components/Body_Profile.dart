@@ -14,20 +14,20 @@ class BodyProfile extends StatelessWidget {
           SizedBox(height: 20),
           ProfileMenu(
             text: "My Account",
-            icon: "icons/User Icon.svg",
+            icon: "icons/Camera_Icon.svg",
             press: () => {},
           ),
-          ProfileMenu(
+         /* ProfileMenu(
             text: "Notifications",
             icon: "icons/Bell.svg",
             press: () {},
-          ),
+          ),*/
           ProfileMenu(
             text: "Settings",
             icon: "icons/Settings.svg",
             press: () {},
           ),
-          ProfileMenu(
+         /* ProfileMenu(
             text: "Help Center",
             icon: "icons/Question mark.svg",
             press: () {},
@@ -36,7 +36,7 @@ class BodyProfile extends StatelessWidget {
             text: "Log Out",
             icon: "icons/Log out.svg",
             press: () {},
-          ),
+          ),*/
         ],
       ),
     );
